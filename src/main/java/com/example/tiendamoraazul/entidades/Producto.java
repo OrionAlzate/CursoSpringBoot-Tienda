@@ -4,6 +4,8 @@ public class Producto {
 
     private Integer id;
     private String nombre;
+
+    private String foto;
     private String descripcion;
     private Integer cantidad;
     private Double precioUnitario;
@@ -21,12 +23,10 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(Integer id, String nombre, String descripcion, Integer cantidad,
-                    Double precioUnitario, String clasificacion, String marca,
-                    String presentacion, Double peso, Boolean estado, String proveedor,
-                    Double volumen, String fechaIngreso, String fechaVencimiento, Boolean aplicaDescuento) {
+    public Producto(Integer id, String nombre, String foto, String descripcion, Integer cantidad, Double precioUnitario, String clasificacion, String marca, String presentacion, Double peso, Boolean estado, String proveedor, Double volumen, String fechaIngreso, String fechaVencimiento, Boolean aplicaDescuento) {
         this.id = id;
         this.nombre = nombre;
+        this.foto = foto;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
         this.precioUnitario = precioUnitario;
@@ -57,6 +57,14 @@ public class Producto {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     public String getDescripcion() {
