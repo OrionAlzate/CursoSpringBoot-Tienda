@@ -11,3 +11,10 @@ public class TiendamoraazulApplication {
 	}
 
 }
+
+
+// CAPAS: servicios, repositorios, entidades y controladores
+// Repositorios son los que se comunican con los servicios
+// Servicios son los que se comunican con la base de datos para obtener o brindar información
+// Entidades son los que modelan la información de la base de datos (las tablas)
+
