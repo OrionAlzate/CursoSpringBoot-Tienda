@@ -47,7 +47,7 @@ public class ControladorProducto {
     public ResponseEntity<?> buscarPorId(@PathVariable Integer id){
         try{
 
-            ResponseEntity
+            return ResponseEntity
                     .status(HttpStatus.OK)
                     .body(servicioProducto.buscarPorId(id));
         }catch (Exception error){
